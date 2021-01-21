@@ -78,6 +78,8 @@ permalink: /Finals/
 
 Note: Extra points if you will implement the said services via containerization.
 
+DONE
+
 # **Output**
 
 [https://github.com/mlaabelong/sysad2-12021/tree/final-exam](https://github.com/mlaabelong/sysad2-12021/tree/final-exam)
