@@ -1,0 +1,108 @@
+I"�<h2 id="module-5-configure-and-manage-containerized-environment"><strong>Module 5: Configure and manage containerized environment</strong></h2>
+
+<h1 id="hands-on-activity-8-containerization"><strong>Hands-on Activity 8: Containerization</strong></h1>
+
+<h1 id="procedure"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Clone your newly forked repository.</p>
+  </li>
+  <li>
+    <p>Make a new branch named “activity8” from master branch using git branch activity8 and git checkout activity8</p>
+  </li>
+  <li>
+    <p>Make a new remote upstream with git remote add upstreamhttps://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Install Docker and enable the docker socket.</p>
+  </li>
+  <li>
+    <p>Add to docker group to your current user.</p>
+  </li>
+  <li>
+    <p>Create a Dockerfile to install web and db server</p>
+  </li>
+  <li>
+    <p>Install and build the Dockerfile using Ansible.</p>
+  </li>
+  <li>
+    <p>add,commit and push it to your activity8 branch</p>
+  </li>
+  <li>
+    <p>Request a pull request for the master branch in https://github.com/ajcanlas-tip/sysad2-12021.git  and activity8 branch of your forked repository</p>
+  </li>
+</ol>
+
+<h1 id="output"><strong>Output</strong></h1>
+
+<p><a href=""></a></p>
+
+<h1 id="quiz-51-containerization"><strong>Quiz 5.1: Containerization</strong></h1>
+
+<h1 id="procedure-1"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Create a directory named “quiz51” in your student number directory in Quiz 1.3</p>
+  </li>
+  <li>
+    <p>Create a markdown file named “README.md” in the newly created directory with the directory summary.</p>
+  </li>
+  <li>
+    <p>Create playbook to install Elastic Stack in a contanerized form.</p>
+  </li>
+  <li>
+    <p>Then create a Pull request and put your forked repo in the only question of this quiz (Note answer this quiz as well as create a pull request).</p>
+  </li>
+</ol>
+
+<h1 id="output-1"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/Quiz5.1">https://github.com/mlaabelong/sysad2-12021/tree/Quiz5.1</a></p>
+
+<h2 id="module-6-cloud-services"><strong>Module 6: Cloud Services</strong></h2>
+
+<h1 id="hands-on-final-exam"><strong>Hands-on Final Exam</strong></h1>
+
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/sysad2-12021.git (Links to an external site.)</p>
+  </li>
+  <li>
+    <p>Clone your new repository in your VM https://github.com/&lt; your username &gt;/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Create a branch named “final-exam” and checkout in that branch.</p>
+  </li>
+  <li>
+    <p>Create an Ansible playbook that does the following with an input of a config.yaml file and structure inventory file.</p>
+
+    <p>4.1 Clone your prelim exam repository</p>
+
+    <p>4.2 Install and configure one enterprise service that can be installed in Debian,Centos and OpenSuse servers</p>
+
+    <p>4.3 Install and configure one monitoring tool that can be installed in Debian, Centos and OpenSuse servers (if it is a stack there should be option of different host)</p>
+
+    <p>4.4 Change Motd as “Ansible Managed by <username>"</username></p>
+  </li>
+  <li>
+    <p>push and commit your final-exam branch in the VM (no need for ansible.cfg upon pushing)</p>
+  </li>
+  <li>
+    <p>request a pull request from that branch in GitHub</p>
+  </li>
+  <li>
+    <p>For your final exam to be counted, please paste your repository link as an answer in this exam.</p>
+  </li>
+</ol>
+
+<p>Note: Extra points if you will implement the said services via containerization.</p>
+
+<h1 id="output-2"><strong>Output</strong></h1>
+
+<p><a href=""></a></p>
+:ET

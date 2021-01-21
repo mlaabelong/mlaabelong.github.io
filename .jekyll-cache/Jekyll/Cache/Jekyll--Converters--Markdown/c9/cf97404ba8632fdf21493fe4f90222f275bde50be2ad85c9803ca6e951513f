@@ -1,0 +1,409 @@
+I"�9<h2 id="module-1-understanding-devops-culture"><strong>Module 1:</strong> Understanding DevOps culture</h2>
+<h1 id="hands-on-activity-2-install-and-configure-your-repository-in-remote-git-in-github"><strong>Hands-on Activity 2: Install and configure your repository in remote Git in GitHub</strong></h1>
+
+<h1 id="procedure"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Create an account in Github</p>
+
+    <p>Username should be your given initials and last name followed by -tip (e.g. ajcanlas-tip)</p>
+
+    <p>Use your TIP email address for this (if you already linked your email with GitHub create a seperate one)</p>
+
+    <p>Verify your account in your email in GitHub.</p>
+  </li>
+  <li>
+    <p>Create a repository with your username (in my case it is ajcanlas-tip) without any files; and it should be public.</p>
+  </li>
+  <li>
+    <p>In your Alpine VM clone the repository you just created in my case this is my url <a href="https://github.com/ajcanlas-tip/ajcanlas-tip.git">https://github.com/ajcanlas-tip/ajcanlas-tip.git</a></p>
+  </li>
+  <li>
+    <p>Create a profile with markdown this is a <a href="google.com">cheat sheat</a> in a “READEME.md” file</p>
+
+    <p>READEME.md should have the following:</p>
+
+    <ol>
+      <li>
+        <p>Your full name</p>
+      </li>
+      <li>
+        <p>Year Level</p>
+      </li>
+      <li>
+        <p>Interest</p>
+      </li>
+      <li>
+        <p>Email Address</p>
+      </li>
+      <li>
+        <p>Computer Specs (CPU/Ram size/Disk type and size)</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>To add it to your profile add the README.md file commit it then push it in the repository (to push a repository use git <em>push -u origin master</em>)</p>
+
+    <p>Commands:</p>
+
+    <p><strong>git add READEME.md</strong></p>
+
+    <p><strong>git commit -m “First commit”</strong></p>
+
+    <p><strong>git push -u origin master</strong></p>
+  </li>
+  <li>
+    <p>Fork this repository <a href="https://github.com/ajcanlas-tip/sysad2-12021.git">https://github.com/ajcanlas-tip/sysad2-12021.git</a></p>
+  </li>
+  <li>
+    <p>Clone your newly forked repository with <em>git clone</em> <em>https://github.com/&lt; your username &gt;/sysad2-12021.git</em> and go in the repository directory</p>
+  </li>
+  <li>
+    <p>Make a new branch named “activity2” using <em>git branch activity 2 and git checkout activity2</em></p>
+  </li>
+  <li>
+    <p>Make a new new remote upstream with git</p>
+  </li>
+  <li>
+    <p>Create a directory with your username, create a directory name “activity2” add the previous README.md file as HA2.md</p>
+
+    <p>Command used:</p>
+
+    <ol>
+      <li>
+        <p>mkdir &lt; your username&gt;</p>
+      </li>
+      <li>
+        <p>mkdir activity2</p>
+      </li>
+      <li>
+        <p>cp <path of="" your="" README.md="" file=""> HA2.md</path></p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>add, commit and push it to your activity2 branch</p>
+
+    <p>Command used:</p>
+
+    <ol>
+      <li>
+        <p><em>git add HA2.md</em></p>
+      </li>
+      <li>
+        <p><em>git commit -s n “activity2”</em></p>
+      </li>
+      <li>
+        <p><em>git push -u origin upstream</em></p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Request a pull request for the master branch in <a href="https://github.com/ajcanlas-tip/sysad2-12021.git">https://github.com/ajcanlas-tip/sysad2-12021.git</a> and activity2 branch of your forked repository</p>
+  </li>
+</ol>
+
+<h1 id="output"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/activity2">https://github.com/mlaabelong/sysad2-12021/tree/activity2</a></p>
+
+<h1 id="quiz-13-git"><strong>Quiz 1.3: Git</strong></h1>
+
+<h1 id="procedure-1"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/syad2-12021.git</p>
+  </li>
+  <li>
+    <p>Create a branch for your development</p>
+  </li>
+  <li>
+    <p>Create a directory with your student number</p>
+  </li>
+  <li>
+    <p>Create a file named “README.md”, and the content in “README.md” is a Markdown version of your info like this <a href="google.com">page</a></p>
+  </li>
+  <li>
+    <p>Then create a pull request and put your forked repo in the only question of this quiz (Note answer this quiz as well as create a pull request)</p>
+  </li>
+</ol>
+
+<h1 id="output-1"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/Quizzes">https://github.com/mlaabelong/sysad2-12021/tree/Quizzes</a></p>
+
+<h2 id="module-2-leveraging-infrastructure-as-code-using-ansible"><strong>Module 2:</strong> Leveraging Infrastructure as Code using Ansible</h2>
+
+<h1 id="hands-on-activity-3-ansible-basics"><strong>Hands-on Activity 3: Ansible Basics</strong></h1>
+
+<h1 id="procedure-2"><strong>Procedure</strong></h1>
+
+<p>Setup is Alpine and Ubuntu VMs are connected via a local network, in my case</p>
+
+<p>Alpine VM, IP is 192.168.122.117 (Or Any VM that has Git installed)</p>
+
+<p>Ubuntu VM,IP is 192.168.122.125 and hostname should be ubuntu-<your student="" number=""> (e.g. ubuntu-1110670)</your></p>
+
+<ol>
+  <li>
+    <p>Fork the instructor repository and clone the repository.</p>
+  </li>
+  <li>
+    <p>Create a new branch called “activity3” and checkout in that branch.</p>
+  </li>
+  <li>
+    <p>Create a directory with your username as its name and go inside of it, and create a directory called “activity3” and go inside it.</p>
+  </li>
+  <li>
+    <p>Install Ansible via apk in your Alpine VM.</p>
+  </li>
+  <li>
+    <p>To check if you installed Ansible correctly check the python version it in Ansible version command would reflect python 3.</p>
+  </li>
+  <li>
+    <p>First, create a configuration file named “ansible.cfg”, Ansible checks per-directory thus you can have multiple configurations in a system depending on your configuration file in the current directory.</p>
+  </li>
+  <li>
+    <p>Next, populate the ansible.cfg file with basic information such as inventory, host verification, and your default remote user.</p>
+  </li>
+  <li>
+    <p>Next, create your first inventory file with Ubuntu IP on it.</p>
+  </li>
+  <li>
+    <p>Then try to connect using “ping” module via adhoc command</p>
+  </li>
+  <li>
+    <p>Now use “shell” module to check the user via bash commands. (check for the user, hostname, and id)</p>
+  </li>
+  <li>
+    <p>And we can use the “copy” module to create a file with a certain file with the content or copy from your local VM to your remote VM.</p>
+  </li>
+  <li>
+    <p>For more modules, you can check this link (Links to an external site.) of the module index.</p>
+  </li>
+  <li>
+    <p>You can also check the description of the module using ansible-doc</p>
+  </li>
+  <li>
+    <p>Also, you can group your inventory via the grouping feature of Ansible.</p>
+  </li>
+  <li>
+    <p>Add commit push and create a PR.</p>
+  </li>
+</ol>
+
+<h1 id="output-2"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/activity3">https://github.com/mlaabelong/sysad2-12021/tree/activity3</a></p>
+
+<h1 id="hands-on-activity-4-ansible-playbooks"><strong>Hands-on Activity 4: Ansible Playbooks</strong></h1>
+
+<h1 id="procedure-3"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Clone your newly forked repository.</p>
+  </li>
+  <li>
+    <p>Make a new branch named “activity4” from master branch using git branch activity4 and git checkout activity4</p>
+  </li>
+</ol>
+
+<p>Note: To Prevent Conflicts Create a directory with your username as its name and go inside of it, and create a directory called “activity4” and go inside it.</p>
+
+<ol>
+  <li>
+    <p>Make a new new remote upstream with git remote add upstream https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Create a playbook that install java via package manager , and install boto,ansible,and openstack py packages using pip in both Ubuntu and Centos.</p>
+  </li>
+  <li>
+    <p>add,commit and push it to your activity4 branch</p>
+  </li>
+  <li>
+    <p>Request a pull request for the master branch in https://github.com/ajcanlas-tip/sysad2-12021.git  and activity4 branch of your forked repository.</p>
+  </li>
+</ol>
+
+<h1 id="output-3"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/activity4">https://github.com/mlaabelong/sysad2-12021/tree/activity4</a></p>
+
+<h1 id="hands-on-activity-5-implement-ansible-roles-in-playbooks"><strong>Hands-on Activity 5: Implement Ansible roles in playbooks</strong></h1>
+
+<h1 id="procedure-4"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Clone your newly forked repository.</p>
+  </li>
+  <li>
+    <p>Make a new branch named “activity5” from master branch using git branch activity5 and git checkout activity5</p>
+  </li>
+</ol>
+
+<p>Note: To Prevent Conflicts Create a directory with your username as its name and go inside of it, and create a directory called “activity5” and go inside it.</p>
+
+<ol>
+  <li>
+    <p>Make a new new remote upstream with git remote add upstream https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Optimize the playbook in Hands-on Activity 4: Ansible Playbooks</p>
+  </li>
+  <li>
+    <p>add,commit and push it to your activity5 branch</p>
+  </li>
+  <li>
+    <p>Request a pull request for the master branch in https://github.com/ajcanlas-tip/sysad2-12021.git  and activity5 branch of your forked repository.</p>
+  </li>
+</ol>
+
+<h1 id="output-4"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/activity5">https://github.com/mlaabelong/sysad2-12021/tree/activity5</a></p>
+
+<h1 id="quiz-21-ansible"><strong>Quiz 2.1: Ansible</strong></h1>
+
+<h1 id="procedure-5"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Create a directory named “quiz21” in your student number directory in Quiz 1.3/</p>
+  </li>
+  <li>
+    <p>Create a markdown file named “README.md” in the newly created directory with the following contents:</p>
+
+    <ol>
+      <li>
+        <p>How to create an Ansible Configuration.</p>
+      </li>
+      <li>
+        <p>How to create an Ansible Inventory.</p>
+      </li>
+      <li>
+        <p>How to create an Ad-hoc Ansible command with setup and shell module.</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Then create a Pull request and put your forked repo in the only question of this quiz (Note answer this quiz as well as create a pull request).</p>
+  </li>
+</ol>
+
+<h1 id="output-5"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/Quiz2.1">https://github.com/mlaabelong/sysad2-12021/tree/Quiz2.1</a></p>
+
+<h1 id="quiz-22-ansible-playbooks"><strong>Quiz 2.2. Ansible Playbooks</strong></h1>
+
+<h1 id="procedure-6"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Create a directory named “quiz22” in your student number directory in Quiz 1.3</p>
+  </li>
+  <li>
+    <p>Create a markdown file named “README.md” in the newly created directory with the directory summary.</p>
+  </li>
+  <li>
+    <p>Transform this <a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04">procedure</a> (Links to an external site.) as a playbook.</p>
+  </li>
+  <li>
+    <p>Then create a Pull request and put your forked repo in the only question of this quiz (Note answer this quiz as well as create a pull request).</p>
+  </li>
+</ol>
+
+<h1 id="output-6"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/Quiz2.2">https://github.com/mlaabelong/sysad2-12021/tree/Quiz2.2</a></p>
+
+<h1 id="quiz-23-ansible-roles"><strong>Quiz 2.3. Ansible Roles</strong></h1>
+
+<h1 id="procedure-7"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Create a directory named “quiz23” in your student number directory in Quiz 1.3</p>
+  </li>
+  <li>
+    <p>Create a markdown file named “README.md” in the newly created directory with the directory summary.</p>
+  </li>
+  <li>
+    <p>Optimize Quiz 2.2 with roles.</p>
+  </li>
+  <li>
+    <p>Then create a Pull request and put your forked repo in the only question of this quiz (Note answer this quiz as well as create a pull request).</p>
+  </li>
+</ol>
+
+<h1 id="output-7"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/Quiz2.3">https://github.com/mlaabelong/sysad2-12021/tree/Quiz2.3</a></p>
+
+<h1 id="hands-on-prelim-exam"><strong>Hands-on Prelim Exam</strong></h1>
+
+<h1 id="procedure-8"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/sysad2-12021.git (Links to an external site.)</p>
+  </li>
+  <li>
+    <p>Clone your new repository in your VM https://github.com/&lt; your username &gt;/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Create a branch named “prelim-exam” and checkout in that branch.</p>
+  </li>
+  <li>
+    <p>Create an Ansible playbook that does the following with an input of a config.yaml file</p>
+
+    <p>Role 1 (python):</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. Installs the latest python3 and pip3
+
+ 2. use pip3 as default pip 
+
+ 3. use python3 as default python 
+</code></pre></div>    </div>
+
+    <p>Role 2 (Java)</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. Install Java open-jdk
+</code></pre></div>    </div>
+
+    <p>Role 3 (Change motd)</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. Create Motd containing the text defined by a variable defined in config.yaml file and if there is no variable input the default motd is "Ansible Managed node by (your user name)"
+</code></pre></div>    </div>
+
+    <p>Role 4 (Create user)</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1. Create a user with a variable defined in config.yaml
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>push and commit your prelim-exam branch in the VM (no need for ansible.cfg and inventory upon pushing)</p>
+  </li>
+  <li>
+    <p>request a pull request from that branch in GitHub</p>
+  </li>
+  <li>
+    <p>For your prelim exam to be counted, please paste your repository link as an answer in this exam.</p>
+  </li>
+</ol>
+
+<h1 id="output-8"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/prelim-exam">https://github.com/mlaabelong/sysad2-12021/tree/prelim-exam</a></p>
+
+:ET

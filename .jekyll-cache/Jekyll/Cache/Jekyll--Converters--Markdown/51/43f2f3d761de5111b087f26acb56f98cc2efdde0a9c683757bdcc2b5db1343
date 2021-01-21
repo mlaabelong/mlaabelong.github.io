@@ -1,0 +1,181 @@
+I"t<h2 id="module-3-install-configure-and-manage-enterprise-services"><strong>Module 3: Install, configure and manage enterprise services</strong></h2>
+
+<h1 id="hands-on-activity-6-install-configure-and-manage-enterprise-services-via-ansible"><strong>Hands-on Activity 6: Install, configure, and manage enterprise services via Ansible</strong></h1>
+
+<h1 id="procedure"><strong>Procedure</strong></h1>
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Clone your newly forked repository.</p>
+  </li>
+  <li>
+    <p>Make a new branch named “activity6” from master branch using git branch activity6 and git checkout activity6</p>
+  </li>
+  <li>
+    <p>Make a new new remote upstream with git remote add upstream https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Create a playbook that installs dhcpd, bind9, vsftpd, samba, httpd, mariadb in both Ubuntu and Centos (use Roles to optimize the playbook)</p>
+  </li>
+  <li>
+    <p>Create different plays in installing per service and identify it as a group in Inventory file.</p>
+  </li>
+  <li>
+    <p>add,commit and push it to your activity6 branch</p>
+  </li>
+  <li>
+    <p>Request a pull request for the master branch in https://github.com/ajcanlas-tip/sysad2-12021.git  and activity6 branch of your forked repository.</p>
+  </li>
+</ol>
+
+<h1 id="output"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/activity6">https://github.com/mlaabelong/sysad2-12021/tree/activity6</a></p>
+
+<h1 id="quiz-31-managed-information-systems-services"><strong>Quiz 3.1: Managed Information Systems Services</strong></h1>
+
+<h1 id="procedure-1"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Create a directory named “quiz31” in your student number directory in Quiz 1.3</p>
+  </li>
+  <li>
+    <p>Create a markdown file named “README.md” in the newly created directory with the directory summary.</p>
+  </li>
+  <li>
+    <p>Create a playbook that installs an vsftpd server.</p>
+  </li>
+  <li>
+    <p>Then create a Pull request and put your forked repo in the only question of this quiz (Note answer this quiz as well as create a pull request).</p>
+  </li>
+</ol>
+
+<h1 id="output-1"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/Quiz3.1">https://github.com/mlaabelong/sysad2-12021/tree/Quiz3.1</a></p>
+
+<h1 id="quiz-32-common-workload-services"><strong>Quiz 3.2: Common Workload Services</strong></h1>
+
+<h1 id="procedure-2"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Create a directory named “quiz32” in your student number directory in Quiz 1.3</p>
+  </li>
+  <li>
+    <p>Create a markdown file named “README.md” in the newly created directory with the directory summary.</p>
+  </li>
+  <li>
+    <p>Create a playbook to install and configure an httpd server.</p>
+  </li>
+  <li>
+    <p>Then create a Pull request and put your forked repo in the only question of this quiz (Note answer this quiz as well as create a pull request).</p>
+  </li>
+</ol>
+
+<h1 id="output-2"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/Quiz32">https://github.com/mlaabelong/sysad2-12021/tree/Quiz32</a></p>
+
+<h2 id="module-4-install-configure-and-manage-monitoring-tools"><strong>Module 4: Install, configure, and manage monitoring tools</strong></h2>
+
+<h1 id="hands-on-activity-7-install-configure-and-manage-enterprise-monitoring-via-ansible"><strong>Hands-on Activity 7: Install, configure, and manage enterprise monitoring via Ansible</strong></h1>
+
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Clone your newly forked repository.</p>
+  </li>
+  <li>
+    <p>Make a new branch named “activity7” from master branch using git branch activity7 and git checkout activity7</p>
+  </li>
+  <li>
+    <p>Make a new remote upstream with git remote add upstream https://github.com/ajcanlas-tip/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Create a playbook that installs ELK, Nagios, Grafana + Prometheus in both Ubuntu and Centos (use Roles to optimize the playbook)</p>
+  </li>
+  <li>
+    <p>Create different plays in installing per service and identify it as a group in Inventory file.</p>
+  </li>
+  <li>
+    <p>add,commit and push it to your activity7 branch</p>
+  </li>
+  <li>
+    <p>Request a pull request for the master branch in https://github.com/ajcanlas-tip/sysad2-12021.git  and activity7 branch of your forked repository</p>
+  </li>
+</ol>
+
+<h1 id="output-3"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/activity7">https://github.com/mlaabelong/sysad2-12021/tree/activity7</a></p>
+
+<h1 id="quiz-41-availability-monitor"><strong>Quiz 4.1: Availability Monitor</strong></h1>
+
+<h1 id="procedure-3"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Create a directory named “quiz41” in your student number directory in Quiz 1.3</p>
+  </li>
+  <li>
+    <p>Create a markdown file named “README.md” in the newly created directory with the directory summary.</p>
+  </li>
+  <li>
+    <p>Create playbook to install Nagios Core.</p>
+  </li>
+  <li>
+    <p>Then create a Pull request and put your forked repo in the only question of this quiz (Note answer this quiz as well as create a pull request).</p>
+  </li>
+</ol>
+
+<h1 id="output-4"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/Quiz4.1">https://github.com/mlaabelong/sysad2-12021/tree/Quiz4.1</a></p>
+
+<h1 id="hands-on-midterm-exam"><strong>Hands-on Midterm Exam</strong></h1>
+
+<h1 id="procedure-4"><strong>Procedure</strong></h1>
+
+<ol>
+  <li>
+    <p>Fork this repository https://github.com/ajcanlas-tip/sysad2-12021.git (Links to an external site.)</p>
+  </li>
+  <li>
+    <p>Clone your new repository in your VM https://github.com/&lt; your username &gt;/sysad2-12021.git</p>
+  </li>
+  <li>
+    <p>Create a branch named “midterm-exam” and checkout in that branch.</p>
+  </li>
+  <li>
+    <p>Create an Ansible playbook that does the following with an input of a config.yaml file and arranged Inventory file:</p>
+
+    <p>4.1 Install and configure Elastic Stack in separate  hosts (Elastic Search, Kibana, Logstash)</p>
+
+    <p>4.2 Install Nagios in one host</p>
+
+    <p>4.3 Install Grafana,Prometheus and Influxdb in seperate hosts (Influxdb,Grafana,Prometheus)</p>
+
+    <p>4.4 Install Lamp Stack in seperate hosts (Httpd + Php,Mariadb)</p>
+  </li>
+  <li>
+    <p>push and commit your midterm-exam branch in the VM (no need for ansible.cfg upon pushing)</p>
+  </li>
+  <li>
+    <p>request a pull request from that branch in GitHub</p>
+  </li>
+  <li>
+    <p>For your midterm exam to be counted, please paste your repository link as an answer in this exam.</p>
+  </li>
+</ol>
+
+<h1 id="output-5"><strong>Output</strong></h1>
+
+<p><a href="https://github.com/mlaabelong/sysad2-12021/tree/midterm-exam">https://github.com/mlaabelong/sysad2-12021/tree/midterm-exam</a></p>
+
+:ET
